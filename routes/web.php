@@ -77,7 +77,6 @@ Route::group(array('prefix' => 'backend','middleware'=> ['token_admin', 'token_a
 	Route::get('/penjualan/create','Backend\PenjualanController@create');
 	Route::post('/penjualan','Backend\PenjualanController@store');
 	Route::delete('/penjualan/{id}','Backend\PenjualanController@destroy');
-
 });
 
 /* ACCESS CONTROL VIEW */
@@ -133,7 +132,7 @@ Route::group(array('prefix' => 'backend','middleware'=> ['token_admin']), functi
 	Route::get('/penjualan/datatable','Backend\PenjualanController@datatable');
 	Route::get('/penjualan','Backend\PenjualanController@index');
 	Route::get('/penjualan/{id}','Backend\PenjualanController@show');
-    Route::get('/penjualan/barang/popup-media/{id_count}','Backend\PenjualanController@popup_media_barang');
+	Route::get('/penjualan/barang/popup-media/{id_count}','Backend\PenjualanController@popup_media_barang');
 
     Route::get('/report-purchase','Backend\LaporanController@index_purchase');
     Route::get('/report-penjualan','Backend\LaporanController@index_penjualan');

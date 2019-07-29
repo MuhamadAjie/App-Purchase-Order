@@ -71,9 +71,6 @@
 			<li class="{{ ($segment == 'penjualan' ? 'active' : '') }}">
 				<a href="<?=url('backend/penjualan');?>"><i class="fa fa-credit-card"></i> Penjualan</a>
 			</li>
-			<li class="{{ ($segment == 'pembayaran' ? 'active' : '') }}">
-				<a href="<?=url('#');?>"><i class="fa fa-credit-card"></i> Pembayaran</a>
-            </li>
 			<li class="{{ ($segment == 'koreksi-stok' ? 'active' : '') }}">
                 <a href="<?=url('backend/koreksi-stok');?>"><i class="fa fa-cogs"></i> Koreksi Stok</a>
             </li>
